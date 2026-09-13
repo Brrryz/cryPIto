@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #11141E;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #11141E;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #03bfb5;
+}
+
+.navbar a.active{
+    color: #03bfb5;
+}
+
+.hero-learn h1 {
+  text-align: center;
+  color: #03bfb5;
+  display: flex;
+  margin: 32px 0 16px;
+}
+
+.learn-card.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #230c33;
+  border: 2px solid #03bfb5;
+  padding: 32px;
+  border-radius: 10px;
+  margin-bottom: 32px;
+}
+
+.learn-card.main .text h2 {
+  font-size: 25.6px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.learn-card.main .text p {
+  color: #ccc;
+}
+
+.hover-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 48px;
+}
+
+.learn-card.hover {
+  position: relative;
+  width: 48%;
+  background: #230c33;
+  border: 2px solid #03bfb5;
+  padding: 24px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.learn-card.hover h3 {
+  font-size: 19.2px;
+  color: white;
+}
+
+.hover-content {
+  margin-top: 16px;
+  color: #03bfb5;
+  display: none;
+}
+
+.learn-card.hover:hover .hover-content {
+  display: block;
+}
+
+.accordion-section h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.accordion-item {
+  flex: 1;
+  min-width: 250px;
+}
+
+.accordion-header {
+  width: 100%;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  padding: 16px;
+  font-size: 16px;
+  border-bottom: 1px solid #555;
+  position: relative;
+}
+
+.accordion-body {
+  background-color: #11141E;
+  color: #ccc;
+  padding: 16px;
+  display: none;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+}
+
+
+footer {
+    background: linear-gradient(to top, #230c33, #11141E 90%);
+    color: #03bfb5;
+    margin: 40px;
+    padding: 30px;
+    font-size: 14px;
+    border: 2px solid #03bfb5;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+font-family: 'Segoe UI', sans-serif;
+display: block;
+color:#03bfb5;
+text-decoration: none;
+margin-bottom: 8px;
+}
+
+.footer-contact {
+font-family: 'Segoe UI', sans-serif;
+display: flex;
+flex-direction: column;
+gap: 2px;
+text-align: center;
+margin-left: 150px;
+}
+
+.rights {
+font-family: 'Segoe UI', sans-serif;
+text-align: right;
+color: #03bfb5;
+font-size: 13px;
+line-height: 1.4;
+margin-bottom: 8px;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .footer-contact {
+    text-align:right;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+}
